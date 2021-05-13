@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="kereskedes">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="auto" maxOccurs="unbounded">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="tipus" type="xs:string"/>
+                            <xs:element name="sebesseg" type="xs:positiveInteger"/>
+                            <xs:element name="evjarat" type="xs:positiveInteger"/>
+                        </xs:sequence>
+                        <xs:attribute name="rendszam" type="xs:string" use="required"/>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>

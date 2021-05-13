@@ -1,0 +1,9 @@
+xquery version "3.1";
+
+for $a in fn:doc("autok.xml")//auto
+where $a/evjarat=min(//evjarat)
+return 
+    <legidosebb_auto>
+        {$a/tipus}
+        {$a/evjarat}
+    </legidosebb_auto>

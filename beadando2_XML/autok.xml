@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<kereskedes 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="autok.xsd"
+>
+	<auto rendszam="ABC-123">
+		<tipus>Ford</tipus>
+		<sebesseg>200</sebesseg>
+		<evjarat>2012</evjarat>
+	</auto>
+	<auto rendszam="BCD-456">
+		<tipus>Audi</tipus>
+		<sebesseg>250</sebesseg>
+		<evjarat>2015</evjarat>
+	</auto>
+	<auto rendszam="EFG-789">
+		<tipus>Mercedes</tipus>
+		<sebesseg>170</sebesseg>
+		<evjarat>1995</evjarat>
+	</auto>
+</kereskedes>

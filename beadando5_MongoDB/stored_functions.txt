@@ -1,0 +1,47 @@
+// create
+
+db.system.js.save({
+  _id:"createEquipment",
+  value:function(name, units){
+    db.equipments.insertOne({"name": name, "units": unit})
+   }
+});
+
+db.system.js.save({
+  _id:"createErrorLog",
+  value:function(message, date){
+    db.error_logs.insertOne({"message": message, "date": date})
+   }
+});
+
+//update
+
+db.system.js.save({
+  _id:"updateEquipment",
+  value:function(id, name, unit){
+    db.equipments.update({"_id": id}, {$set: {"name": name, "units": unit}})
+   }
+});
+
+db.system.js.save({
+  _id:"updateErrorLog",
+  value:function(id, message, date){
+     db.error_logs.update({"_id": id}, {$set: {"message": message, "date": date}})
+   }
+});
+
+//delete
+
+db.system.js.save({
+  _id:"deleteEquipment",
+  value:function(id){
+    db.equipments.remove({"_id": id})
+   }
+});
+
+db.system.js.save({
+  _id:"deleteErrorLog",
+  value:function(id){
+    db.error_logs.remove({"_id": id})
+   }
+});

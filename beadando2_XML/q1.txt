@@ -1,0 +1,9 @@
+xquery version "3.1";
+
+for $a in doc("autok.xml")//auto
+order by $a/tipus
+return 
+    element {"auto"} {
+        text {$a}
+    }
+

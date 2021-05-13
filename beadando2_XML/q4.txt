@@ -1,0 +1,5 @@
+xquery version "3.1";
+
+let $a := fn:doc("autok.xml")//auto
+return
+update value //tipus [.="Ford"] with "Mazda"

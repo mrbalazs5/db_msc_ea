@@ -1,0 +1,6 @@
+xquery version "3.1";
+
+let $a := fn:doc("autok.xml")//auto[@rendszam = "BCD-456"]
+
+return
+    update delete $a

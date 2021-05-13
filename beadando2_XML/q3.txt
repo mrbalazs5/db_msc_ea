@@ -1,0 +1,11 @@
+xquery version "3.1";
+
+let $k := fn:doc("autok.xml")//kereskedes
+return
+update insert 
+    <auto rendszam="JKL-654">
+		<tipus>Lada</tipus>
+		<sebesseg>130</sebesseg>
+		<evjarat>1990</evjarat>
+    </auto>
+into $k
